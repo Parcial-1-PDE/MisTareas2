@@ -1,0 +1,58 @@
+@startuml
+
+class MainActivity {
+    - ListView lvTareas
+    - ArrayList<Tarea> tareasPendientes
+    - ArrayList<Tarea> tareasHechas
+    - ArrayAdapter<String> tareasAdapter
+    - ArrayList<String> nombresTareas
+    - boolean mostrandoPendientes
+    + onCreate(Bundle): void
+    + onCreateOptionsMenu(Menu): boolean
+    + onOptionsItemSelected(MenuItem): boolean
+    + onActivityResult(int, int, Intent): void
+    + onResume(): void
+    + actualizarLista(): void
+    + onCreateContextMenu(ContextMenu, View, ContextMenu.ContextMenuInfo): void
+    + onContextItemSelected(MenuItem): boolean
+}
+
+class RegistroTareaActivity {
+    - EditText etNombre
+    - EditText etDescripcion
+    - EditText etFecha
+    - EditText etPrioridad
+    - EditText etCoste
+    + onCreate(Bundle): void
+}
+
+class DetallesTareaActivity {
+    - TextView tvNombre
+    - TextView tvDescripcion
+    - TextView tvFecha
+    - TextView tvPrioridad
+    - TextView tvCoste
+    + onCreate(Bundle): void
+}
+
+class Tarea {
+    - String nombre
+    - String descripcion
+    - String fecha
+    - String prioridad
+    - double coste
+    + Tarea(String, String, String, String, double)
+    + getNombre(): String
+    + getDescripcion(): String
+    + getFecha(): String
+    + getPrioridad(): String
+    + getCoste(): double
+}
+
+MainActivity "1" --> "N *" Tarea
+MainActivity --> RegistroTareaActivity : "abre"
+MainActivity --> DetallesTareaActivity : "abre"
+RegistroTareaActivity --> Tarea : "crea"
+DetallesTareaActivity --> Tarea : "muestra detalles"
+
+@enduml

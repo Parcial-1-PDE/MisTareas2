@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".RegistroTareaActivity" />
-        <activity android:name=".DetallesTareaActivity" />
+        <activity android:name=".Tarea.RegistroTareaActivity" />
+        <activity android:name=".Tarea.DetallesTareaActivity" />
     </application>
 </manifest>

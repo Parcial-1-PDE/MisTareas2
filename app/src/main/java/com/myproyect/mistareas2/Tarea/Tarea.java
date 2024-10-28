@@ -1,4 +1,4 @@
-package com.myproyect.mistareas2;
+package com.myproyect.mistareas2.Tarea;
 
 import java.io.Serializable;
 

@@ -1,0 +1,19 @@
+@startuml
+
+actor Usuario
+
+usecase "Añadir Tarea" as UC_AddTask
+usecase "Ver Lista de Tareas Pendientes" as UC_ViewPending
+usecase "Ver Lista de Tareas Hechas" as UC_ViewDone
+usecase "Marcar Tarea como Hecha" as UC_MarkDone
+usecase "Eliminar Tarea" as UC_DeleteTask
+usecase "Ver Detalles de Tarea" as UC_ViewDetails
+
+Usuario --> UC_AddTask
+Usuario --> UC_ViewPending
+Usuario --> UC_ViewDone
+Usuario --> UC_MarkDone
+Usuario --> UC_DeleteTask
+Usuario --> UC_ViewDetails
+
+@enduml

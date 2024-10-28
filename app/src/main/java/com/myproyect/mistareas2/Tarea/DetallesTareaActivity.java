@@ -1,10 +1,12 @@
-package com.myproyect.mistareas2;
+package com.myproyect.mistareas2.Tarea;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.myproyect.mistareas2.R;
 
 public class DetallesTareaActivity extends AppCompatActivity {
 

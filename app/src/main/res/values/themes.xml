@@ -9,7 +9,7 @@
         <item name="android:windowBackground">#FFFFFF</item> <!-- Fondo blanco -->
 
         <!-- Estilo de texto -->
-        <item name="android:textColorPrimary">#000000</item> <!-- Texto negro para mejor contraste -->
+        <item name="android:textColorPrimary">#6A6A6A</item> <!-- Texto negro para mejor contraste -->
 
         <!-- Estilo de campos de entrada -->
         <item name="android:editTextColor">#000000</item> <!-- Texto de los EditText en negro -->

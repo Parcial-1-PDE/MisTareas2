@@ -3,38 +3,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#000000">
 
     <TextView
         android:id="@+id/tvNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="24sp"
+        android:textColor="#2196F3"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvDescripcion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="8dp" />
+        android:paddingTop="8dp"
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/tvFecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="8dp" />
+        android:paddingTop="8dp"
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/tvPrioridad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="8dp" />
+        android:paddingTop="8dp"
+        android:textColor="#FF0000"
+        android:text="Prioridad: URGENTE" />
 
     <TextView
         android:id="@+id/tvCoste"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="8dp" />
+        android:paddingTop="8dp"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/btnVolver"
@@ -43,6 +50,5 @@
         android:layout_marginTop="16dp"
         android:text="Volver"
         android:textColor="#FFFFFF"
-        android:background="#2196F3" />
-
+        android:background="#555555" />
 </LinearLayout>
